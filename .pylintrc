@@ -192,3 +192,15 @@ generated-members=
 # produce valid context managers.
 contextmanager-decorators=contextlib.contextmanager
 
+
+[LOGGING]
+
+# Logging modules to check that the string format arguments are in logging
+# function parameter format
+logging-modules=logging
+
+
+[MISCELLANEOUS]
+
+# List of note tags to take in consideration, separated by a comma.
+notes=FIXME,XXX,TODO
