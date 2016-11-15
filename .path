@@ -5,5 +5,3 @@
 # Add `~/bin` to the `$PATH`
 export PATH="$HOME/bin:$PATH";
 
-# add Rust cargo binaries to PATH
-export PATH=~/.cargo/bin:$PATH
