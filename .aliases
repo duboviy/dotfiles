@@ -166,3 +166,17 @@ alias reload="exec $SHELL -l"
 
 # Print each PATH entry on a separate line
 alias path='echo -e ${PATH//:/\\n}'
+
+
+# docker shortcuts
+alias drac='docker rm $(docker ps -a -q)'
+alias drui='docker rmi -f $(docker images | grep '"'"'^<none>'"'"' | awk '"'"'{ print $3 }'"'"')'
+alias dsrc='docker stop $(docker ps -a -q)'
+
+# git shortcuts
+alias gsha='git rev-parse --short HEAD'
+alias gpom='git checkout master && git pull origin master'
+
+# vagrant shortcuts
+alias vus='vagrant up && vagrant ssh'
+alias vgr='vagrant global-status | grep running'
