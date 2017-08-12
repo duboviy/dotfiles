@@ -4,7 +4,7 @@
 export EDITOR='vim';
 
 # Enable persistent REPL history for `node`.
-export NODE_REPL_HISTORY=~/.node_history;
+export NODE_REPL_HISTORY=$HOME/.node_history;
 # Allow 32³ entries; the default is 1000.
 export NODE_REPL_HISTORY_SIZE='32768';
 # Use sloppy mode by default, matching web browsers.
@@ -28,3 +28,6 @@ export LESS_TERMCAP_md="${yellow}";
 
 # Don’t clear the screen after quitting a manual page.
 export MANPAGER='less -X';
+
+# Add NLTK data folder to env variables
+export NLTK_DATA=$HOME/nltk_data
